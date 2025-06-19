@@ -1,0 +1,194 @@
+ 
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+body {
+    background-color: #000;
+    margin: 0px;
+}
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+
+.sign {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.logo1 {
+    height: 50px;
+    background-color: transparent;
+
+
+
+}
+
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(http://surl.li/ypklnc);
+    background-size: cover;
+    background-position: 90%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+nav {
+    width: 13%;
+}
+
+.red-btn {
+    background: rgb(229, 9, 20);
+    color: #ffffff;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 5px 17px;
+    margin-left: 15px;
+
+}
+
+.signheader {
+    height: 30px;
+    width: 70px;
+}
+
+.red-btn:hover {
+    background: rgb(193, 17, 25);
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 250px;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.getb {
+    height: 40px;
+    width: 130px;
+
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 80px;
+}
+
+.box {
+    padding: 70px;
+    justify-content: center;
+}
+
+/*trending*/
+.t2 {
+    background-color: #000;
+    margin: 0px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+}
+
+.twodropdown {
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.listoftrending {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.p1 {
+    height: 200px;
+    margin: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.next {
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.askquestion {
+    background-color: #000;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.ask {
+    background-color: #574c4b;
+    height: 30px;
+    width: 80vw;
+    display: flex;
+    margin: 5px;
+    padding: 15px;
+    align-items: center;
+}
