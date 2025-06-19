@@ -1,44 +1,78 @@
- 
+/* Global Styles */
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Logo */
 .logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-
-}
-
-body {
-    background-color: #000;
-    margin: 0px;
-}
-
-* {
-    font-family: "Bebas Neue", sans-serif;
-}
-
-body {
-    font-family: 'Bebas Neue', sans-serif;
-
-}
-
-
-.sign {
-    margin-left: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
 }
 
 .logo1 {
     height: 50px;
     background-color: transparent;
-
-
-
 }
 
+/* Sign-In Section */
+.sign {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.signheader {
+    height: 30px;
+    width: 70px;
+}
+
+/* Buttons */
+.red-btn {
+    background: rgb(229, 9, 20);
+    color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 5px 17px;
+    margin-left: 15px;
+}
+
+.red-btn:hover {
+    background: rgb(193, 17, 25);
+}
+
+/* Form Inputs */
+input, select {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+input {
+    height: 40px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+select {
+    height: 30px;
+    width: 80px;
+}
+
+.getb {
+    height: 40px;
+    width: 130px;
+}
+
+/* Main Banner */
 .main {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(http://surl.li/ypklnc);
     background-size: cover;
@@ -47,71 +81,31 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
+/* Text Container */
 .textcontainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
+/* Navigation */
 nav {
     width: 13%;
 }
 
-.red-btn {
-    background: rgb(229, 9, 20);
-    color: #ffffff;
-    border: 0;
-    border-radius: 0.25rem;
-    padding: 5px 17px;
-    margin-left: 15px;
-
-}
-
-.signheader {
-    height: 30px;
-    width: 70px;
-}
-
-.red-btn:hover {
-    background: rgb(193, 17, 25);
-}
-
-input {
-    background-color: transparent;
-    color: white;
-    height: 40px;
-    width: 250px;
-    border-width: 1px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.getb {
-    height: 40px;
-    width: 130px;
-
-}
-
-select {
-    background-color: transparent;
-    color: white;
-    height: 30px;
-    width: 80px;
-}
-
+/* Section Box */
 .box {
     padding: 70px;
     justify-content: center;
 }
 
-/*trending*/
+/* Trending Section */
 .t2 {
     background-color: #000;
-    margin: 0px;
+    margin: 0;
     padding: 20px;
     color: white;
     display: flex;
@@ -119,19 +113,9 @@ select {
     width: 5rem;
 }
 
-.twodropdown {
+.twodropdown, .listoftrending {
     display: flex;
     flex-direction: row;
-
-
-
-}
-
-.listoftrending {
-    display: flex;
-    flex-direction: row;
-
-
 }
 
 .p1 {
@@ -142,39 +126,20 @@ select {
     border-radius: 10px;
 }
 
-.next {
-    background-color: #000;
-    color: white;
+/* Cards */
+.card1, .card2, .card3 {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .card1 {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-
     justify-content: space-between;
-    align-items: center;
 }
 
-.card2 {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.card3 {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
+/* Ask Question Section */
 .askquestion {
     background-color: #000;
     padding: 20px;
@@ -191,4 +156,36 @@ select {
     margin: 5px;
     padding: 15px;
     align-items: center;
+}
+
+/* 📱 Responsive Media Query */
+@media screen and (max-width: 768px) {
+    .card1, .card2, .card3 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sign, .twodropdown, .listoftrending {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo, .textcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, select, .getb {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .t2 {
+        width: auto;
+        align-items: center;
+    }
 }
